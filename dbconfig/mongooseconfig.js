@@ -1,10 +1,10 @@
 const mongoose=require("mongoose")
-const mongoconfig = require("./config")
+const config = require("./config")
 
 
-module.exports={
-    uri_prod : mongoconfig.uri_prod,
-    uri_test : mongoconfig.uri_test,
+const mongoconfig={
+    uri_prod : config.uri_prod,
+    uri_test : config.uri_test,
     options: {
         keepAlive: true,
         //reconnectTries: Number.MAX_VALUE,
